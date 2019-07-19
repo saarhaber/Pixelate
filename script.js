@@ -17,6 +17,7 @@ function colorAll(myColor) {
 }
 
 let myColor = "grey";
+
 function colorCollector()
 {
     myColor = document.getElementsByClassName("colorDropdown")[0].value;
@@ -39,3 +40,36 @@ function colorReset() {
       element.style.backgroundColor = "grey";
     } 
 }
+
+// let cell = document.querySelectorAll(".column")
+// for (let i=0; i<cell.length; i++){
+// cell[i].onclick = function() {
+//     cell[i].style.backgroundColor = myColor
+//     }
+// }
+
+let isDrawing = false;
+const cells = document.getElementsByTagName("td");
+document.onmousemove = function(){
+    beginDraw();
+};
+let beginDraw = () => {
+    for (let cell of cells){
+        cell.addEventListener('mousedown',event => {
+            isDrawing = true;
+            cell.style.backgroundColor = myColor
+        });
+
+        cell.addEventListener('mousemove',event => {
+            if(isDrawing){
+                    cell.style.backgroundColor = myColor
+            }
+        });
+
+        cell.addEventListener('mouseup',event => {
+            if(isDrawing){
+                isDrawing = false;
+            }
+        });
+    }
+} 
