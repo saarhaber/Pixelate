@@ -1,3 +1,4 @@
+
 function addCol()
 {
 	var allrows = document.getElementsByClassName("row");
@@ -7,5 +8,13 @@ function addCol()
 	{
 		allrows[step].appendChild(newcol);
 	}
-
+function colorAll(myColor) {
+   var row = document.getElementsByClassName("column");
+   for (let i=0; i<row.length; i++)
+    row[i].style.backgroundColor = myColor;
+}
+let myColor;
+function colorCollector()
+{
+    myColor = document.getElementsByClassName("colorDropdown")[0].value;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Pixelate</title>
+  <link rel="stylesheet" type="text/css" href="addRow.css">
+  <title>Pixelate</title>
 </head>
 <body>
 
@@ -18,9 +18,9 @@
 			<button class="addRowButton">add row</button>
 			<button class="deleteRowButton">delete row</button>
 			<button class="resetGrid">reset grid</button>
-			<button class="colorAllButton">color all</button>
+			<button onclick="colorAll(myColor)" class="colorAllButton">color all</button>
 			<button class="colorRemaningButton">color remaining</button>
-			<select class="colorDropdown">
+			<select onclick ="colorCollector()" class="colorDropdown">
 				<option value="red">Red</option>
 				<option value="blue">Blue</option>
 				<option value="black">Black</option>
@@ -42,10 +42,11 @@
     .column{
         height: 30px;
         width: 30px;
-        background-color: red;
+        background-color: grey;
        }
 </style>
 <script src="script.js"></script>
+<script src="addRow.js"></script>
 </html>
 
 
