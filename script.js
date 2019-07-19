@@ -23,7 +23,7 @@ function colorCollector()
 }
 
 function colorRemain() {
-    let row = document.getElementsByClassName("column")[0];
+    let row = document.getElementsByClassName("column");
     for (let i=0; i<row.length; i++)
     { let element = row[i];
         if (element.style.backgroundColor == "grey") {
