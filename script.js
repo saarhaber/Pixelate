@@ -1,5 +1,5 @@
 
-function addCol()
+function addCol(event)
 {
 	var allrows = document.getElementsByClassName("row");
 	newcol = document.createElement("td");
