@@ -17,9 +17,9 @@
 			<button class="deleteColumnButton">delete column</button>
 			<button class="addRowButton">add row</button>
 			<button class="deleteRowButton">delete row</button>
-			<button class="resetGrid">reset grid</button>
+			<button onclick="colorReset()" class="resetGrid">reset grid</button>
 			<button onclick="colorAll(myColor)" class="colorAllButton">color all</button>
-			<button class="colorRemaningButton">color remaining</button>
+			<button onclick="colorRemain()" class="colorRemaningButton">color remaining</button>
 			<select onclick ="colorCollector()" class="colorDropdown">
 				<option value="red">Red</option>
 				<option value="blue">Blue</option>
@@ -39,11 +39,11 @@
 
 </body>
 <style>
-    .column{
-        height: 30px;
-        width: 30px;
-        background-color: grey;
-       }
+	.column {
+		height: 30px;
+		width: 30px;
+		background-color: grey;
+	}
 </style>
 <script src="script.js"></script>
 <script src="addRow.js"></script>
