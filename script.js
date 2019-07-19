@@ -1,14 +1,15 @@
 
-function addCol(event)
-{
-	var allrows = document.getElementsByClassName("row");
-	newcol = document.createElement("td");
-	newcol.setAttribute('class', 'column');
-	for(var step = 0; step < allrows.length; step++)
-	{
-		allrows[step].appendChild(newcol);
-	}
-}
+//Napat's former function
+    // function addCol(event)
+    // {
+    // 	var allrows = document.getElementsByClassName("row");
+    // 	newcol = document.createElement("td");
+    // 	newcol.setAttribute('class', 'column');
+    // 	for(var step = 0; step < allrows.length; step++)
+    // 	{
+    // 		allrows[step].appendChild(newcol);
+    // 	}
+    // }
 
 function colorAll(myColor) {
    var row = document.getElementsByClassName("column");
