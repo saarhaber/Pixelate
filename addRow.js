@@ -3,8 +3,8 @@ let addRowButton = document.querySelector(".addRowButton")
 let addRowFunction = () => {
     let tbody = document.querySelector(".mainGrid tbody")
     console.log(tbody);
-    let tr = document.querySelector(".row")
-    let tr_html = "<tr class=\"row\">" + tr.innerHTML + "</tr>"
+    let tr = document.querySelectorAll(".row")
+    let tr_html = "<tr class=\"row\">" + tr[tr.length - 1].innerHTML + "</tr>"
     tbody.innerHTML += tr_html
     
     let td_list = document.querySelectorAll(".mainGrid tr:last-child td")

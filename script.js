@@ -41,12 +41,7 @@ function colorReset() {
     } 
 }
 
-// let cell = document.querySelectorAll(".column")
-// for (let i=0; i<cell.length; i++){
-// cell[i].onclick = function() {
-//     cell[i].style.backgroundColor = myColor
-//     }
-// }
+
 
 let isDrawing = false;
 const cells = document.getElementsByTagName("td");
