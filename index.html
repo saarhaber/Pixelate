@@ -13,7 +13,7 @@
 
    	<!-- Buttons -->
 		<div class="mainButtons">
-			<button class="addColumnButton">add column</button>
+			<button class="addColumnButton" onclick="addCol()">add column</button>
 			<button class="deleteColumnButton">delete column</button>
 			<button class="addRowButton">add row</button>
 			<button class="deleteRowButton">delete row</button>
@@ -30,22 +30,20 @@
 
 	<!-- Grid -->
 		<table class="mainGrid">
-			<tr class="trclass">
-				<td class="tdclass"></td>
-				<td class="tdclass"></td>
-				<td class="tdclass"></td>
+			<tr class="row">
+				<td class="column"></td>
+				<td class="column"></td>
+				<td class="column"></td>
 			</tr>
 		</table>
 
 </body>
 <style>
-	.row {
-		
-	}
-	.trclass {
-		height: 30px;
-		width: 30px;
-	}
+    .column{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+       }
 </style>
 <script src="script.js"></script>
 </html>
