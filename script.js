@@ -24,11 +24,11 @@ function colorCollector()
 }
 
 function colorRemain() {
-    let row = document.getElementsByClassName("column");
+    let row = document.querySelectorAll(".column");
     for (let i=0; i<row.length; i++)
-    { let element = row[i];
-        if (element.style.backgroundColor == "grey") {
-            element.style.backgroundColor = myColor;
+    { 
+        if (row[i].style.backgroundColor == "grey") {
+            row[i].style.backgroundColor = myColor;
         }
     }
 }
