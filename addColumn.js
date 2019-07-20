@@ -1,6 +1,5 @@
 let addColumnButton = document.querySelector(".addColumnButton")
 
-//Napat's function refactored here
 addColumnButton.addEventListener('click', function(event)
 {
 	let allrows = document.getElementsByClassName("row");

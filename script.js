@@ -1,4 +1,3 @@
-
 function addCol(event)
 {
 	var allrows = document.getElementsByClassName("row");
@@ -11,6 +10,7 @@ function addCol(event)
 }
 
 function colorAll(myColor) {
+   document.getElementsByTagName("h1")[0].style.color = myColor;
    var row = document.getElementsByClassName("column");
    for (let i=0; i<row.length; i++)
     row[i].style.backgroundColor = myColor;
@@ -39,6 +39,7 @@ function colorReset() {
     { let element = row[i];
       element.style.backgroundColor = "grey";
     } 
+    document.getElementsByTagName("h1")[0].style.color = "white";
 }
 
 
