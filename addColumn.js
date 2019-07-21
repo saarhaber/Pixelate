@@ -5,10 +5,10 @@ addColumnButton.addEventListener('click', function(event)
 	let allrows = document.getElementsByClassName("row");
 	if(allrows.length == 0)
 	{
-		let table = document.getElementsByClassName("mainGrid");
+    	let tbody = document.querySelector(".mainGrid tbody")
 	    let newrow = document.createElement("tr");
 		newrow.setAttribute('class', 'row');
-		table[0].appendChild(newrow);
+		tbody.appendChild(newrow);
 		let newcol = document.createElement("td");
 		newcol.setAttribute('class', 'column');
 		newcol.style.backgroundColor = "grey";
