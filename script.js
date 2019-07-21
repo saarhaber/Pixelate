@@ -24,6 +24,7 @@ function colorCollector()
 }
 
 function colorRemain() {
+    myColor = document.getElementsByClassName("colorDropdown")[0].value;
     let row = document.getElementsByClassName("column");
     for (let i=0; i<row.length; i++)
     { let element = row[i];
