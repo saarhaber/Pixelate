@@ -10,9 +10,10 @@ function addCol(event)
 }
 
 function colorAll(myColor) {
-   document.getElementsByTagName("h1")[0].style.color = myColor;
-   var row = document.getElementsByClassName("column");
-   for (let i=0; i<row.length; i++)
+    myColor = document.getElementsByClassName("colorDropdown")[0].value;
+    document.getElementsByTagName("h1")[0].style.color = myColor;
+    var row = document.getElementsByClassName("column");
+    for (let i=0; i<row.length; i++)
     row[i].style.backgroundColor = myColor;
 }
 
