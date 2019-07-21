@@ -1,3 +1,5 @@
+
+
 function addCol(event)
 {
 	var allrows = document.getElementsByClassName("row");
@@ -29,7 +31,7 @@ function colorRemain() {
     let row = document.getElementsByClassName("column");
     for (let i=0; i<row.length; i++)
     { let element = row[i];
-        if (element.style.backgroundColor == "grey") {
+        if ((element.style.backgroundColor == "grey") || (element.style.backgroundColor == "")) {
             element.style.backgroundColor = myColor;
         }
     }
