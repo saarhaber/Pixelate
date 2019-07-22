@@ -4,7 +4,7 @@
 
 This is an exercise to further demonstrate an understanding of HTML, CSS, JS, DOM manipulation, and handling user events by recreating a pixel art editor.
 
-### View Project Live: Pixel Art Editor
+### View Project Live: <a href="https://saarhaber.github.io/Pixelate/"> Pixel Art Editor</a>
 
 Collaboration: Mahdiur Rahman, Napat Karmniyanont and Saar Haber
 
