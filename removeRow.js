@@ -1,5 +1,6 @@
 let deleteRowButton = document.querySelector(".deleteRowButton")
 
+//deletes the final tr element in tbody
 deleteRowButton.onclick = function(event) {
     event.preventDefault()
 

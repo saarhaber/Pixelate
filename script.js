@@ -1,40 +1,37 @@
-/* This was the old add column function. It didn't add a cell to each row but only to the last one*/
-// function addCol(event)
-// {
-// 	var allrows = document.getElementsByClassName("row");
-// 	newcol = document.createElement("td");
-// 	newcol.setAttribute('class', 'column');
-// 	for(var step = 0; step < allrows.length; step++)
-// 	{
-// 		allrows[step].appendChild(newcol);
-// 	}
-// }
 
+//colors all td elements to the current value of the color-select element
 function colorAll(myColor) {
-    myColor = document.getElementsByClassName("colorDropdown")[0].value;
-    document.getElementsByTagName("h1")[0].style.color = myColor;
-    var row = document.getElementsByClassName("column");
-    for (let i=0; i<row.length; i++)
-    row[i].style.backgroundColor = myColor;
+    //update myColor to the latest color-select
+        myColor = document.getElementsByClassName("colorDropdown")[0].value;
+    //nice little effect where we change the title to this color
+        document.getElementsByTagName("h1")[0].style.color = myColor;
+        var row = document.getElementsByClassName("column");
+        for (let i=0; i<row.length; i++)
+            row[i].style.backgroundColor = myColor;
 }
 
 let myColor = "grey";
 
+//updates myColor to latest color from color-select element
 function colorCollector()
 {
     myColor = document.getElementsByClassName("colorDropdown")[0].value;
 }
 
+//Targets those td elements with 'grey' or empty string as background color
+//and turns them to latest myColor
 function colorRemain() {
     myColor = document.getElementsByClassName("colorDropdown")[0].value;
     let row = document.getElementsByClassName("column");
     for (let i=0; i<row.length; i++)
     { let element = row[i];
+        //checks if grey or empty
         if ((element.style.backgroundColor == "grey") || (element.style.backgroundColor == "")) {
             element.style.backgroundColor = myColor;
         }
     }
 }
+
 
 function colorReset() {
     let row = document.getElementsByClassName("column");
