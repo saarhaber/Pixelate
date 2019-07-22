@@ -32,7 +32,7 @@ function colorRemain() {
     }
 }
 
-
+//targeting all the cells and coloring them in 'grey'
 function colorReset() {
     let row = document.getElementsByClassName("column");
     for (let i=0; i<row.length; i++)
@@ -43,7 +43,8 @@ function colorReset() {
 }
 
 
-
+//constently checking if the mouse is clicking and when id does it colors the cells it hovers over
+//until mouse is up, with the color chosen from the drop down
 let isDrawing = false;
 const cells = document.getElementsByTagName("td");
 document.onmousemove = function(){
