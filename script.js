@@ -1,15 +1,14 @@
-
-
-function addCol(event)
-{
-	var allrows = document.getElementsByClassName("row");
-	newcol = document.createElement("td");
-	newcol.setAttribute('class', 'column');
-	for(var step = 0; step < allrows.length; step++)
-	{
-		allrows[step].appendChild(newcol);
-	}
-}
+/* This was the old add column function. It didn't add a cell to each row but only to the last one*/
+// function addCol(event)
+// {
+// 	var allrows = document.getElementsByClassName("row");
+// 	newcol = document.createElement("td");
+// 	newcol.setAttribute('class', 'column');
+// 	for(var step = 0; step < allrows.length; step++)
+// 	{
+// 		allrows[step].appendChild(newcol);
+// 	}
+// }
 
 function colorAll(myColor) {
     myColor = document.getElementsByClassName("colorDropdown")[0].value;
