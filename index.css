@@ -2,23 +2,41 @@
 	text-align: center;
 	color: white;
 }
+
+.mainTitle p {
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.mainTitle p a {
+  color: gainsboro;
+}
+
 h1{
 	font-family:Arial;
 	font-size: 40px;
 	color: white;
 }
+
 p{
 	text-align: center;
 	font-size: 15px;
 }
+
 body{
 	background-color: #15151a;
 }
+
 .mainGrid{
 	margin-top:30px;
-    margin-left:auto; 
-    margin-right:auto;
+  margin-left:auto; 
+  margin-right:auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(66, 66, 66);
+  border-radius: 5px;
 }
+
 .mainButtons{
 	text-align:center;
 }
@@ -27,10 +45,45 @@ button{
   background-color:#272b5e;
   border: none;
   color: white;
-  padding: 5px 5px;
+  padding: 15px 20px;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   margin: 2px 2px;
   cursor: pointer;
+  border-radius: 5px;
 }
+
+button:hover {
+  opacity: 0.5;
+}
+
+select {
+  width: 100px;
+  font-size: 14px;
+  height: 40px;
+}
+
+select:hover {
+  opacity: 0.5;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
