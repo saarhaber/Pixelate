@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pixelate-React/static/css/main.cebb4f78.chunk.css",
+    "main.js": "/Pixelate-React/static/js/main.dd57c669.chunk.js",
+    "main.js.map": "/Pixelate-React/static/js/main.dd57c669.chunk.js.map",
+    "runtime~main.js": "/Pixelate-React/static/js/runtime~main.507451a3.js",
+    "runtime~main.js.map": "/Pixelate-React/static/js/runtime~main.507451a3.js.map",
+    "static/js/2.86c0466d.chunk.js": "/Pixelate-React/static/js/2.86c0466d.chunk.js",
+    "static/js/2.86c0466d.chunk.js.map": "/Pixelate-React/static/js/2.86c0466d.chunk.js.map",
+    "index.html": "/Pixelate-React/index.html",
+    "precache-manifest.97c9dfb73be36a21f90046e8550fe9e1.js": "/Pixelate-React/precache-manifest.97c9dfb73be36a21f90046e8550fe9e1.js",
+    "service-worker.js": "/Pixelate-React/service-worker.js",
+    "static/css/main.cebb4f78.chunk.css.map": "/Pixelate-React/static/css/main.cebb4f78.chunk.css.map"
+  }
+}
